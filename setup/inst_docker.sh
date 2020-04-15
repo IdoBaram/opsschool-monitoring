@@ -27,6 +27,4 @@ EOF
 
 sudo systemctl daemon-reload
 sudo systemctl restart docker
-sudo docker info
-sudo docker run hello-world
 
