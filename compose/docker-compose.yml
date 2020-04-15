@@ -28,6 +28,7 @@ services:
     volumes:
       #- ./grafana/grafana.ini:/etc/grafana/grafana.ini
       - ./grafana/sample.yaml:/usr/share/grafana/conf/provisioning/datasources/sample.yaml
+      - ./grafana/sample.yaml:/etc/grafana/provisioning/datasources/sample.yaml
       - grafana_data:/var/lib/grafana
     restart: unless-stopped
     logging: *default-logging
